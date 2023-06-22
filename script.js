@@ -3,8 +3,10 @@ const Amarelo= document.getElementById('Amarelo')
 const Verde= document.getElementById('Verde')
 const Azul= document.getElementById('Azul')
 const maquina = document.getElementById('jogadorMaquina')
+const verificar = document.getElementById('verificar');
 
 let vetjogador=[], vetmaq=[];
+
 jogar();
 
 Vermelho.onclick = ()=>{
@@ -49,4 +51,40 @@ jogadorMaquina.onclick = ()=>{
 function jogar() {
     vetmaq.push(Math.floor(Math.random()* 4 + 1));
     console.log('Maquina' + vetmaq);
+}
+function verifygame(){
+    const resp = vetmaq.map( function(elemento, indice, array){
+        //console.log(indice);
+        //console.log(array);
+        if(vetjogador[indice]== elemento){
+            return 1;
+        }else{
+            vetmaq=[];
+            return 0;
+
+        }
+    });
+    console.log('Teste de acerto = ' + resp);
+
+}
+function verifygame2(){
+    tamVet = vetmaq.length;
+    let i = 0, resp;
+    while (i < tamVet) {
+        if (vetjogador[i] != vetmaq[i]) {
+           resp=0;
+           vetmaq=[];
+           break;
+        }else{
+            resp=1;
+        }
+        i += 1;
+     }
+     console.log('Teste de acerto = ' + resp);
+     vetjogador=[];
+     
+}
+
+verificar.onclick=()=>{
+    verifygame();
 };
