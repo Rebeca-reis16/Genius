@@ -5,6 +5,7 @@
     color: rgb(0, 0, 0);
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    font-style:inherit;
+   font-size: 60px;
 }
 #boxgame{
     display: flex;
@@ -23,7 +24,7 @@
     font-size: 40px;
     border-style:dashed;
 background-color: #ff3e3e;
-border-end-start-radius: 75px;
+border-end-start-radius: 80px;
 border-end-end-radius: 75px;
 }
 #Verde{
@@ -33,7 +34,7 @@ border-end-end-radius: 75px;
     font-size: 40px;
     border-style:dashed;
 background-color: #7eff64;
-border-end-start-radius: 75px;
+border-end-start-radius: 80px;
 border-end-end-radius: 75px;
 
 }
@@ -44,7 +45,7 @@ border-end-end-radius: 75px;
     font-size: 40px;
     border-style:dashed;
     background-color: #faff63;
-    border-end-start-radius: 75px;
+    border-end-start-radius: 80px;
    border-end-end-radius: 75px;
 
 }
@@ -55,15 +56,17 @@ border-end-end-radius: 75px;
     font-size: 40px;
     border-style:dashed;
     background-color: #6060f2;
-    border-end-start-radius: 75px;
+    border-end-start-radius: 80px;
     border-end-end-radius: 75px;
 }
 body{
-    background-color: rgb(248, 212, 212);
+    background: linear-gradient(45deg, rgb(0, 229, 255), rgb(205, 125, 251));
     
 }
 button{
-    background-color: #53b2dd;
+    background-color: #18191a;
     color: #feffff;
    border-color: cornflowerblue;
+   background: linear-gradient(#e66465, #9198e5);
 }
+
